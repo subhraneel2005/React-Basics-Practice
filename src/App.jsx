@@ -15,10 +15,12 @@ function App() {
     <div>
       <First/>
       {/* <Second/> */}
+      <div className='grid grid-cols-3 p-4'>
       <PropsPractice username="Chacha" />
       <PropsPractice username="JeetChomuLord"/>
       <PropsPractice username="Chachi" />
       <PropsPractice/><PropsPractice/>
+      </div>
     </div>
   )
 }
