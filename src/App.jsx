@@ -3,6 +3,7 @@ import First from './First'
 import Second from './Second'
 import PropsPractice from './PropsPractice'
 import Third from './Third'
+import Fourth from './Fourth'
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Third colorOne="yellow" colorTwo="orange" colorThree="gray" tOne='Yellow' tTwo='Orange' tThree='Gray' title="Card 1" dColor="green" />
         <Third/>
       </div>
+      <Fourth/>
     </div>
   )
 }
