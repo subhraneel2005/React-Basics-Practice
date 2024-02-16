@@ -2,15 +2,13 @@ import React from 'react'
 import First from './First'
 import Second from './Second'
 import PropsPractice from './PropsPractice'
+import Third from './Third'
 
 
 
 function App() {
 
-  let user = {
-    username:'JeetChomuLord',
-    description:'As u can see i am not dead !!!',
-  }
+ 
   return (
     <div>
       <First/>
@@ -20,6 +18,10 @@ function App() {
       <PropsPractice username="JeetChomuLord"/>
       <PropsPractice username="Chachi" />
       <PropsPractice/><PropsPractice/>
+      </div>
+      <div className='flex gap-20'>
+        <Third colorOne="yellow" colorTwo="orange" colorThree="gray" tOne='Yellow' tTwo='Orange' tThree='Gray' title="Card 1" dColor="green" />
+        <Third/>
       </div>
     </div>
   )
