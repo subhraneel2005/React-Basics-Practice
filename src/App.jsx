@@ -4,6 +4,7 @@ import Second from './Second'
 import PropsPractice from './PropsPractice'
 import Third from './Third'
 import Fourth from './Fourth'
+import FIve from './FIve'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Third/>
       </div>
       <Fourth/>
+      <FIve/>
     </div>
   )
 }
