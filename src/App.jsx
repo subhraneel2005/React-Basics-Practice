@@ -15,6 +15,8 @@ import three from './assets/three.jpg'
 import four from './assets/four.jpg'
 import five from './assets/five.jpg'
 import six from './assets/six.jpg'
+import Eight from './Todo/Todo'
+import Todo from './Todo/Todo'
 
 
 
@@ -49,6 +51,8 @@ function App() {
           <Seven pics={six} title='Car6' description='Car6 description'/>
         </div>
       </div>
+
+      <Todo/>
     </div>
   )
 }
