@@ -17,6 +17,7 @@ import five from './assets/five.jpg'
 import six from './assets/six.jpg'
 import Eight from './Todo/Todo'
 import Todo from './Todo/Todo'
+import Nine from './Nine'
 
 
 
@@ -53,6 +54,7 @@ function App() {
       </div>
 
       <Todo/>
+      <Nine/>
     </div>
   )
 }
