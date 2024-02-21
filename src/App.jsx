@@ -18,6 +18,7 @@ import six from './assets/six.jpg'
 import Eight from './Todo/Todo'
 import Todo from './Todo/Todo'
 import Nine from './Nine'
+import Weather from './Weather/components/Weather'
 
 
 
@@ -54,7 +55,7 @@ function App() {
       </div>
 
       <Todo/>
-      <Nine/>
+      <Weather/>
     </div>
   )
 }
