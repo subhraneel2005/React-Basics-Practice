@@ -1,10 +1,13 @@
 
 import React, { useState } from 'react'
+import Results from './Results';
 
 function SearchBar() {
 
     const[recipe,setRecipe] = useState('');
     const[ingredients,setIngredients] = useState('');
+    const[title,setTitle] = useState('');
+    const[instructions,setInstructions] = useState('');
     const[list, setList] = useState([]);
 
     const handleChange = (e) => {
@@ -27,16 +30,25 @@ function SearchBar() {
             console.log(json);
         })
 
-        .catch(error => {console.error("Error 404", error)})
+        .catch(error => {console.error("Error 404", error)});
+
+        list.map((index)=>{
+            setTitle(index.title);
+            setIngredients(index.ingredients);
+            setInstructions(index.instructions);
+        })
+
     }
 
   return (
-    <div className='w-full h-full'>
-        <div className='flex'>
-            <input className='border-none bg-slate-600 p-3 outline-none w-[80%] rounded-xl text-white' placeholder='Enter recipe you want' type="text" onChange={handleChange}/>
-            <button className='p-3 rounded-xl bg-red-400' onClick={getData}>Search</button>
+    <div className='w-full'>
+        <div className='block'>
+            <div className='flex gap-3'>
+                <input className='border-none bg-slate-600 p-3 outline-none w-[80%] rounded-xl text-white' placeholder='Enter recipe you want' type="text" onChange={handleChange}/>
+                <button className='p-3 rounded-xl bg-red-400' onClick={getData}>Search</button>
+            </div>
+            <Results title={title} ingredients={ingredients} instructions={instructions}/>
         </div>
-        
     </div>
   )
 }
