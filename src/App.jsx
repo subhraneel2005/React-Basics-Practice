@@ -21,6 +21,7 @@ import Nine from './Nine'
 import Weather from './Weather/components/Weather'
 import MainScreen from './StudentGradeCalculator/MainScreen'
 import Reciepe from './ReciepeFinder/Reciepe'
+import Music from './Musicplayer/Music'
 
 
 
@@ -60,6 +61,7 @@ function App() {
       <Weather/>
       <MainScreen/>
       <Reciepe/>
+      <Music/>
     </div>
   )
 }
