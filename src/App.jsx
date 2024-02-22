@@ -20,6 +20,7 @@ import Todo from './Todo/Todo'
 import Nine from './Nine'
 import Weather from './Weather/components/Weather'
 import MainScreen from './StudentGradeCalculator/MainScreen'
+import Reciepe from './ReciepeFinder/Reciepe'
 
 
 
@@ -58,6 +59,7 @@ function App() {
       <Todo/>
       <Weather/>
       <MainScreen/>
+      <Reciepe/>
     </div>
   )
 }
