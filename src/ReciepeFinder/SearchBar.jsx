@@ -28,6 +28,7 @@ function SearchBar() {
         .then(res => res.json())
         .then(json => {setList(json)
             console.log(json);
+            
         })
 
         .catch(error => {console.error("Error 404", error)});
@@ -43,7 +44,7 @@ function SearchBar() {
   return (
     <div className='w-full'>
         <div className='block'>
-            <div className='flex gap-3'>
+            <div className='flex justify-between px-10'>
                 <input className='border-none bg-slate-600 p-3 outline-none w-[80%] rounded-xl text-white' placeholder='Enter recipe you want' type="text" onChange={handleChange}/>
                 <button className='p-3 rounded-xl bg-red-400' onClick={getData}>Search</button>
             </div>
