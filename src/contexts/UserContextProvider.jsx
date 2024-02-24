@@ -1,6 +1,6 @@
 import React from 'react'
 import UseContext from './UseContext'
-import { FaMoon, FaSun } from 'react-icons/fa';
+
 
 const UserContextProvider = ({children}) => {
 
