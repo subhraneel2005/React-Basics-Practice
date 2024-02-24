@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import UseContext from '../contexts/UseContext'
-import ProfileContext from './ProfileContext';
+import ProfileContext from './ProfileCon';
+import ProfileCon from './ProfileCon';
 
 function LoginContext() {
 
@@ -19,7 +20,7 @@ function LoginContext() {
     <div className='h-screen w-full flex justify-center items-center'>
         <div className='w-[500px] h-[500px] rounded-e-xl bg-lime-500'>
             <div className='block'>
-                <ProfileContext/>
+                <ProfileCon/>
                 <input placeholder='Username'
                 onChange={(e)=>setUsername(e.target.value)} value={username}
                 type="text" />

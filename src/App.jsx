@@ -25,6 +25,7 @@ import Music from './Musicplayer/Music'
 import Chatbot from './AI Chatbot/Chatbot'
 import UserContextProvider from './contexts/UserContextProvider'
 import Theme from './ThemeMode/Theme'
+import LoginContext from './Login/LoginContext'
 
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
       <Music/>
       <Chatbot/>
       <Theme/>
+      <LoginContext/>
     </UserContextProvider>
   )
 }

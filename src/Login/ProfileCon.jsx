@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import UseContext from '../contexts/UseContext'
-function ProfileContext() {
+function ProfileCon() {
 
     const {userData} = useContext(UseContext);
 
@@ -9,4 +9,4 @@ function ProfileContext() {
   )
 }
 
-export default ProfileContext
+export default ProfileCon
