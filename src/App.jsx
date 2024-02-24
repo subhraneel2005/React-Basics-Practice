@@ -24,6 +24,7 @@ import Reciepe from './ReciepeFinder/Reciepe'
 import Music from './Musicplayer/Music'
 import Chatbot from './AI Chatbot/Chatbot'
 import UserContextProvider from './contexts/UserContextProvider'
+import Theme from './ThemeMode/Theme'
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
       <Reciepe/>
       <Music/>
       <Chatbot/>
+      <Theme/>
     </UserContextProvider>
   )
 }
