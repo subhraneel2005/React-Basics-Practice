@@ -5,6 +5,7 @@ function Theme() {
 
     const{toggle} = useContext(UseContext);
     const{changeTheme} = useContext(UseContext);
+    const{toggleText} = useContext(UseContext);
 
   return (
     <div className='h-screen w-full flex justify-center items-center'> 

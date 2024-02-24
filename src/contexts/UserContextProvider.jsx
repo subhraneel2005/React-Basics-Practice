@@ -15,9 +15,18 @@ const UserContextProvider = ({children}) => {
         {
             setToggle('gray')
         }
+
+        if(toggleText === 'Dark')
+        {
+            setToggleText('Light')
+        }
+        else
+        {
+            setToggleText('Light')
+        }
     }
   return (
-    <UseContext.Provider value={[toggle, changeTheme]}>
+    <UseContext.Provider value={{toggle, changeTheme,toggleText}}>
         {children}
     </UseContext.Provider>
   )
