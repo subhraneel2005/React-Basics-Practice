@@ -28,11 +28,11 @@ const UserContextProvider = ({children}) => {
 
         if(textColor === 'black')
         {
-            setToggleText('white')
+            setTextColor('white')
         }
-        else
+        if(textColor === 'white')
         {
-            setToggleText('black')
+            setTextColor('black')
         }
     }
   return (
