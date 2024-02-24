@@ -26,7 +26,7 @@ function Bmi() {
                 placeholder='Enter height in meters'
                 className='px-3 py-2 rounded-xl bg-slate-700 text-white border-none outline-none'
                 onChange={(e) => setHeight(e.target.value)}/>
-                <button className='p-3 cursor-pointer' onClick={calculate}>Calculate BMI</button>
+                <button className='p-3 cursor-pointer bg-green-300 rounded-xl' onClick={calculate}>Calculate BMI</button>
                 <BmiResults  bmi={bmi} />
             </div>
         </div>
