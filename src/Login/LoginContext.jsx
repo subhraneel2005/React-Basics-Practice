@@ -19,7 +19,7 @@ function LoginContext() {
   return (
     <div className='h-screen w-full flex justify-center items-center'>
         <div className='w-[500px] h-[500px] rounded-e-xl bg-lime-500'>
-            <div className='block'>
+            <div className='block w-full h-full p-4'>
                 <ProfileCon/>
                 <input placeholder='Username'
                 onChange={(e)=>setUsername(e.target.value)} value={username}
