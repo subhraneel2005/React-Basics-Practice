@@ -1,11 +1,12 @@
 import React from 'react'
 import UseContext from './UseContext'
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const UserContextProvider = ({children}) => {
 
     const[toggle, setToggle] = React.useState('gray');
-    const[toggleText,setToggleText] = React.useState('Dark');
-
+    const[toggleText,setToggleText] = React.useState(<FaMoon/>);
+    const[textColor, setTextColor] = React.useState('black');
     const changeTheme = () => {
         if(toggle === 'gray')
         {
@@ -16,17 +17,26 @@ const UserContextProvider = ({children}) => {
             setToggle('gray')
         }
 
-        if(toggleText === 'Dark')
+        if(toggleText === <FaMoon/>)
         {
-            setToggleText('Light')
+            setToggleText(<FaSun/>)
         }
         else
         {
-            setToggleText('Light')
+            setToggleText(<FaMoon/>)
+        }
+
+        if(textColor === 'black')
+        {
+            setToggleText('white')
+        }
+        else
+        {
+            setToggleText('black')
         }
     }
   return (
-    <UseContext.Provider value={{toggle, changeTheme,toggleText}}>
+    <UseContext.Provider value={{toggle, changeTheme,toggleText, textColor}}>
         {children}
     </UseContext.Provider>
   )
