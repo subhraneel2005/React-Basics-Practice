@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import UseContext from '../contexts/UseContext'
+import ProfileContext from './ProfileContext';
 
 function LoginContext() {
 
@@ -7,18 +8,18 @@ function LoginContext() {
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
 
-    const {setUser} = useContext(UseContext);
+    const {setUserData} = useContext(UseContext);
 
     const handleClick = (e) => {
         e.preventDefault();
-        setUser({username,email,password});
+        setUserData({username,email,password});
     }
 
   return (
     <div className='h-screen w-full flex justify-center items-center'>
         <div className='w-[500px] h-[500px] rounded-e-xl bg-lime-500'>
             <div className='block'>
-                <h1></h1>
+                <ProfileContext/>
                 <input placeholder='Username'
                 onChange={(e)=>setUsername(e.target.value)} value={username}
                 type="text" />
