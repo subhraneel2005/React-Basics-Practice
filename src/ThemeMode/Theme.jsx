@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UseContext from '../contexts/UseContext'
 
 function Theme() {
+
+    const{toggle} = useContext(UseContext);
+    const{changeTheme} = useContext(UseContext);
+
   return (
-    <div>Theme</div>
+    <div className='h-screen w-full flex justify-center items-center'> 
+        <div>
+            <button></button>
+        </div>
+    </div>
   )
 }
 
