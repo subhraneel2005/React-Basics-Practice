@@ -22,7 +22,7 @@ const UserContextProvider = ({children}) => {
         {
             setToggleText('Light Mode')
         }
-        if(toggleText === 'Light mode')
+        else
         {
             setToggleText('Dark mode')
         }
@@ -31,7 +31,7 @@ const UserContextProvider = ({children}) => {
         {
             setTextColor('white')
         }
-        if(textColor === 'white')
+        else
         {
             setTextColor('black')
         }
