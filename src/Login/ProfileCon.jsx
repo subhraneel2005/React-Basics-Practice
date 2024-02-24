@@ -12,7 +12,7 @@ function ProfileCon() {
   {
     return (<div>
       <h1 className='text-4xl text-slate-800'>Welcome {userData.username}</h1>
-      <h1 className='text-4xl text-slate-800'>Your Email is {userData.email}</h1>
+      {/* <h1 className='text-4xl text-slate-800'>Your Email is {userData.email}</h1> */}
     </div>
             
     )
