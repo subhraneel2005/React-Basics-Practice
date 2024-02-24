@@ -16,6 +16,7 @@ function Bmi() {
             <div className='block'>
                 <h1>BMI Calculator</h1>
                 <input type="text"
+                className='px-3 py-2 rounded-xl bg-slate-700 text-white'
                 placeholder='Enter weight in kgs'
                 onChange={(e) => setWeight(e.target.value)}/>
                 <input type="text"
