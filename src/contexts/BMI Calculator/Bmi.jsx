@@ -17,9 +17,9 @@ function Bmi() {
     <div className='h-screen w-full flex justify-center items-center'>
         <div className='bg-yellow-300 shadow-2xl rounded-lg p-8 flex justify-center items-center w-[400px] h-[450px]'>
             <div className='block'>
-                <h1 className='text-center mb-4 text-2xl text-yellow-800'>BMI Calculator</h1>
+                <h1 className='text-center mb-6 text-2xl text-yellow-800'>BMI Calculator</h1>
                 <input type="text"
-                className='px-3 py-2 rounded-xl bg-slate-700 text-white border-none outline-none'
+                className='px-3 py-2 rounded-xl bg-slate-700 text-white border-none outline-none mb-3'
                 placeholder='Enter weight in kgs'
                 onChange={(e) => setWeight(e.target.value)}/>
                 <input type="text"
