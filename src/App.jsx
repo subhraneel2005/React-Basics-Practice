@@ -23,14 +23,14 @@ import MainScreen from './StudentGradeCalculator/MainScreen'
 import Reciepe from './ReciepeFinder/Reciepe'
 import Music from './Musicplayer/Music'
 import Chatbot from './AI Chatbot/Chatbot'
-
+import UserContextProvider from './contexts/UserContextProvider'
 
 
 function App() {
 
  
   return (
-    <div>
+    <UserContextProvider>
       <First/>
       {/* <Second/> */}
       <div className='grid grid-cols-3 p-4'>
@@ -64,7 +64,7 @@ function App() {
       <Reciepe/>
       <Music/>
       <Chatbot/>
-    </div>
+    </UserContextProvider>
   )
 }
 
