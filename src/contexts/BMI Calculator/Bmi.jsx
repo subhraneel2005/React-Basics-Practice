@@ -3,7 +3,7 @@ import BmiResults from './BmiResults';
 
 function Bmi() {
 
-    const [bmi, setBmi] = useState(null);
+    const [bmi, setBmi] = useState(0);
     const [weight, setWeight] =useState();
     const [ height,setHeight] = useState();
 
