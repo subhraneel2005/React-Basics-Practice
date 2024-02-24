@@ -9,7 +9,7 @@ function Theme() {
     const{textColor} = useContext(UseContext);
 
   return (
-    <div className='h-screen w-full flex justify-center items-center'> 
+    <div className='h-screen w-full flex justify-center items-center select-none'> 
         <div 
         style={{backgroundColor : toggle}}
         className='w-[500px] h-[500px] rounded-xl flex justify-center items-center'>
