@@ -4,6 +4,8 @@ import UseContext from './UseContext'
 
 const UserContextProvider = ({children}) => {
 
+    //for theme changer
+
     const[toggle, setToggle] = React.useState('gray');
     const[toggleText,setToggleText] = React.useState('Dark mode');
     const[textColor, setTextColor] = React.useState('black');
@@ -35,6 +37,10 @@ const UserContextProvider = ({children}) => {
         {
             setTextColor('black')
         }
+
+        //for Login Page
+
+        
     }
   return (
     <UseContext.Provider value={{toggle, changeTheme,toggleText, textColor}}>
