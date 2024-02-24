@@ -13,9 +13,11 @@ function Theme() {
         <div 
         style={{backgroundColor : toggle}}
         className='w-[500px] h-[500px] rounded-xl flex justify-center items-center'>
-            <button className='p-3 rounded-xl' onClick={changeTheme}>{toggleText}</button>
-            <h1 style={{color:textColor}} className='text-center'>Lorem ipsum dolor sit</h1>
-            <p style={{color:textColor}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam officiis sint perferendis recusandae qui odit molestias suscipit assumenda voluptate ipsam, numquam quia, distinctio ducimus maiores cum nam facere, unde voluptatem?</p>
+            <div className='block'>
+                <div className='p-2 bg-black rounded-full mr-28' onClick={changeTheme}>{toggleText}</div>
+                <h1 style={{color:textColor}} className='text-center'>Lorem ipsum dolor sit</h1>
+                <p style={{color:textColor}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam officiis sint perferendis recusandae qui odit molestias suscipit assumenda voluptate ipsam, numquam quia, distinctio ducimus maiores cum nam facere, unde voluptatem?</p>
+            </div>
         </div>
     </div>
   )
