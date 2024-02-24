@@ -10,7 +10,7 @@ function Bmi() {
     const calculate = () => {
       if (!height || !weight) return alert("Enter the required values !!!");
 
-      setBmi(weight/(height*height));
+      setBmi((weight/(height*height)).toFixed(2));
     }
 
   return (
