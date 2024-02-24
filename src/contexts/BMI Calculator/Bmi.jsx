@@ -16,13 +16,14 @@ function Bmi() {
             <div className='block'>
                 <h1>BMI Calculator</h1>
                 <input type="text"
-                className='px-3 py-2 rounded-xl bg-slate-700 text-white'
+                className='px-3 py-2 rounded-xl bg-slate-700 text-white border-none outline-none'
                 placeholder='Enter weight in kgs'
                 onChange={(e) => setWeight(e.target.value)}/>
                 <input type="text"
                 placeholder='Enter height in meters'
+                className='px-3 py-2 rounded-xl bg-slate-700 text-white border-none outline-none'
                 onChange={(e) => setHeight(e.target.value)}/>
-                <button onClick={calculate}>Calculate BMI</button>
+                <button className='p-3 cursor-pointer' onClick={calculate}>Calculate BMI</button>
             </div>
         </div>
     </div>
