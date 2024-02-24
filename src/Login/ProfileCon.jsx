@@ -6,11 +6,16 @@ function ProfileCon() {
 
   if(!userData)
   {
-    return <div className='text-4xl text-slate-800'>{userData.username}</div>
+    return <h1>Please Login</h1>
   }
   else
   {
-    return <h1>Please Login</h1>
+    return (<div>
+      <h1 className='text-4xl text-slate-800'>Welcome {userData.username}</h1>
+      <h1 className='text-4xl text-slate-800'>Your Email is {userData.email}</h1>
+    </div>
+            
+    )
   }
 }
 
