@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Bmi() {
+
+    const [bmi, setBmi] = useState(null);
+    
   return (
-    <div>Bmi</div>
+    <div className=''>
+
+    </div>
   )
 }
 
