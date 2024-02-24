@@ -22,6 +22,7 @@ import Weather from './Weather/components/Weather'
 import MainScreen from './StudentGradeCalculator/MainScreen'
 import Reciepe from './ReciepeFinder/Reciepe'
 import Music from './Musicplayer/Music'
+import Chatbot from './AI Chatbot/Chatbot'
 
 
 
@@ -62,6 +63,7 @@ function App() {
       <MainScreen/>
       <Reciepe/>
       <Music/>
+      <Chatbot/>
     </div>
   )
 }
