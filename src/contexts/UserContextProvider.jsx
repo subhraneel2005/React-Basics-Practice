@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UseContext from './UseContext'
 
 
@@ -37,13 +37,15 @@ const UserContextProvider = ({children}) => {
         {
             setTextColor('black')
         }
+    }
 
+    
         //for Login Page
 
-        
-    }
+        const[userData, setUserData] = useState({});
+
   return (
-    <UseContext.Provider value={{toggle, changeTheme,toggleText, textColor}}>
+    <UseContext.Provider value={{toggle, changeTheme,toggleText, textColor,userData, setUserData}}>
         {children}
     </UseContext.Provider>
   )
