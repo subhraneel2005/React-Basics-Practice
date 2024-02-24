@@ -5,9 +5,9 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 const UserContextProvider = ({children}) => {
 
     const[toggle, setToggle] = React.useState('gray');
-    const[toggleText,setToggleText] = React.useState(<FaMoon className='text-white'/>);
+    const[toggleText,setToggleText] = React.useState('Dark mode');
     const[textColor, setTextColor] = React.useState('black');
-    
+
     const changeTheme = () => {
         if(toggle === 'gray')
         {
@@ -18,13 +18,13 @@ const UserContextProvider = ({children}) => {
             setToggle('gray')
         }
 
-        if(toggleText === <FaMoon className='text-white'/>)
+        if(toggleText === 'Dark mode')
         {
-            setToggleText(<FaSun className='text-white'/>)
+            setToggleText('Light Mode')
         }
-        if(toggleText === <FaSun className='text-white'/>)
+        if(toggleText === 'Light mode')
         {
-            setToggleText(<FaMoon className='text-white'/>)
+            setToggleText('Dark mode')
         }
 
         if(textColor === 'black')
