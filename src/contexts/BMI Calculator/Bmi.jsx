@@ -8,7 +8,9 @@ function Bmi() {
     const [ height,setHeight] = useState();
 
     const calculate = () => {
+      if (!height || !weight) return alert("Enter the required values !!!");
 
+      setBmi(weight/(height*height));
     }
 
   return (
