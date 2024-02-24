@@ -26,6 +26,7 @@ import Chatbot from './AI Chatbot/Chatbot'
 import UserContextProvider from './contexts/UserContextProvider'
 import Theme from './ThemeMode/Theme'
 import LoginContext from './Login/LoginContext'
+import Bmi from './contexts/BMI Calculator/Bmi'
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
       <Chatbot/>
       <Theme/>
       <LoginContext/>
+      <Bmi/>
     </UserContextProvider>
   )
 }
