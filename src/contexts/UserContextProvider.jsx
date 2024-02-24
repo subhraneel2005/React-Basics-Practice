@@ -7,6 +7,7 @@ const UserContextProvider = ({children}) => {
     const[toggle, setToggle] = React.useState('gray');
     const[toggleText,setToggleText] = React.useState(<FaMoon className='text-white'/>);
     const[textColor, setTextColor] = React.useState('black');
+    
     const changeTheme = () => {
         if(toggle === 'gray')
         {
@@ -21,7 +22,7 @@ const UserContextProvider = ({children}) => {
         {
             setToggleText(<FaSun className='text-white'/>)
         }
-        else
+        if(toggleText === <FaSun className='text-white'/>)
         {
             setToggleText(<FaMoon className='text-white'/>)
         }
