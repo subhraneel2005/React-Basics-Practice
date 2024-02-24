@@ -3,10 +3,12 @@ import React, { useState } from 'react'
 function Bmi() {
 
     const [bmi, setBmi] = useState(null);
-    
-  return (
-    <div className=''>
 
+  return (
+    <div className='h-screen w-full flex justify-center items-center'>
+        <div className='bg-yellow-300 shadow-2xl rounded-lg p-8 flex justify-center items-center'>
+
+        </div>
     </div>
   )
 }
