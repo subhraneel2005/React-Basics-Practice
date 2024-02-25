@@ -27,6 +27,7 @@ import UserContextProvider from './contexts/UserContextProvider'
 import Theme from './ThemeMode/Theme'
 import LoginContext from './Login/LoginContext'
 import Bmi from './contexts/BMI Calculator/Bmi'
+import SingleProduct from './contexts/SingleProductCOmponent/SingleProduct'
 
 
 function App() {
@@ -70,6 +71,11 @@ function App() {
       <Theme/>
       <LoginContext/>
       <Bmi/>
+
+      <div className='h-screen w-full flex justify-center items-center'>
+        <SingleProduct/>
+      </div>
+      
     </UserContextProvider>
   )
 }
