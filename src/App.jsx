@@ -28,6 +28,7 @@ import Theme from './ThemeMode/Theme'
 import LoginContext from './Login/LoginContext'
 import Bmi from './contexts/BMI Calculator/Bmi'
 import SingleProduct from './contexts/SingleProductCOmponent/SingleProduct'
+import InstagramHome from './InsatgramCLoneUI/InstagramHome'
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
         <SingleProduct/>
       </div>
       
+      <InstagramHome/>
     </UserContextProvider>
   )
 }
