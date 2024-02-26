@@ -31,6 +31,8 @@ import SingleProduct from './contexts/SingleProductCOmponent/SingleProduct'
 import InstagramHome from './InsatgramCLoneUI/InstagramHome'
 import Feed from './InsatgramCLoneUI/Feed'
 import ChatWindow from './ChatWindow'
+import Meme from './LoveCalculator/Love'
+import Love from './LoveCalculator/Love'
 
 
 function App() {
@@ -82,6 +84,7 @@ function App() {
       <InstagramHome/>
       <Feed/>
       <ChatWindow/>
+      <Love/>
     </UserContextProvider>
   )
 }
