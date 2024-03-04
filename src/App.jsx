@@ -33,6 +33,7 @@ import Feed from './InsatgramCLoneUI/Feed'
 import ChatWindow from './ChatWindow'
 import Meme from './LoveCalculator/Love'
 import Love from './LoveCalculator/Love'
+import Flight from './FlightSearch/Flight'
 
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
       <Feed/>
       <ChatWindow/>
       <Love/>
+      <Flight/>
     </UserContextProvider>
   )
 }
